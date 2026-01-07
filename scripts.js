@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSearch = '';
 
     function fetchItems() {
-        fetch('items_api.php')
+        fetch('https://party-rental.greatsite.net/party_rental/items_api.php')
             .then(response => response.json())
             .then(data => {
                 if (!data.success) {
@@ -198,4 +198,5 @@ function showSection(id, clicked) {
     const navItems = document.querySelectorAll('#header-nav li');
     navItems.forEach(li => li.classList.remove('active'));
     if (clicked && clicked.classList) clicked.classList.add('active');
+
 }
