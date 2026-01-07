@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Party Rental</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h1>Party Rental Website</h1>
+        <div class="header-info">
+            <nav id="header-nav">
+                <li onclick="showSection('home', this)">Home</li>
+                <li onclick="showSection('shop', this)" class="active">Shop</li>
+            </nav>
+        </div>
+
+    </header>
+    <div class="outline">
+        <section id="home" class="active-section homepage">
+            <h2>Welcome to Party Rental</h2>
+            <br>
+            <p>Welcome to Party Rental, your ultimate partner for unforgettable celebrations! Whether you're
+                planning an intimate birthday, a lively wedding, or a corporate gala, we provide top-quality party
+                equipment to make every event shine. From colorful inflatables and elegant tents to tables, chairs, and
+                decor, our extensive inventory ensures your party is stress-free and spectacular.</p>
+            <br><br>
+            <h2>Why Choose Party Rental?</h2>
+            <br>
+            <p>
+            <ul>
+                <li><strong>Premium Equipment: </strong> Durable, clean, and event-ready items for all occasions.</li>
+                <li><strong>Convenient Delivery & Setup: </strong> We bring the party to you and handle setup for
+                    effortless entertaining.
+                </li>
+                <li><strong>Packages: </strong> Tailored rentals to fit birthdays, weddings, corporate events, and more.
+                </li>
+                <li><strong>Support: </strong> Friendly guidance to help plan the perfect event, no matter the size.
+                </li>
+            </ul>
+            </p>
+            <br>
+
+            <h2>We offer:</h2>
+            <br>
+            <ul>
+                <li><strong>Furniture: </strong>Tables (round, rectangular, banquet, cocktail), chairs (folding,
+                    Chiavari,
+                    cross-back,
+                    acrylic), bar stools, lounge seating, bistro sets.
+                </li>
+                <li><strong>Tableware & Linens: </strong> Tablecloths, runners, napkins, plates, cutlery, glassware,
+                    chargers, and serving
+                    items.</li>
+                <li><strong>Tents & Canopies:</strong> Various sizes of tents, marquees, and canopies for outdoor
+                    events.</li>
+                <li><strong>Decor & Event Accessories:</strong> Backdrops, arches, LED letters, lighting, drapery,
+                    centerpieces, and
+                    themed decorations.</li>
+            </ul>
+            <br>
+
+            <h2>Gallery</h2>
+            <br>
+            <div class="gallery" id="gallery">
+                <img loading="lazy" src="assets/img/bouncehouse.webp" alt="img1">
+                <img loading="lazy" src="assets/img/light.webp" alt="img3">
+                <img loading="lazy" src="assets/img/table.webp" alt="img4">
+                <img loading="lazy" src="assets/img/tables.webp" alt="img5">
+                <img loading="lazy" src="assets/img/tent.webp" alt="img6">
+                <img loading="lazy" src="assets/img/white table.webp" alt="img7">
+            </div>
+        </section>
+        <section id="shop" class="shop">
+            <h2>Shop</h2>
+            <br>
+            <p>Search Equipment: <input type="search" id="search" placeholder="Search"></p>
+            <br>
+            <div id="sort-div">
+                <p>Sort by:
+                <nav id="items-sort-nav">
+                    <!--Categories show here-->
+                </nav>
+                </p>
+            </div>
+            <br>
+            <div id="items-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>We have</th>
+                            <th>You want</th>
+                            <th>Availability</th>
+                            <th>Book</th>
+                        </tr>
+                    </thead>
+                    <tbody id="item-list-tbody">
+                        <!--Items list here-->
+                    </tbody>
+                </table>
+            </div>
+            <hr><br>
+            <div id="items-booked">
+                <h3>Checkout</h3>
+                <p>Your request:</p>
+                <div class="total-div">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Requested Date</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items-booked-tbody">
+                            <!--Booked items show here-->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" style="text-align:right"><strong>Total</strong></td>
+                                <td id="total-cost">$0.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="checkout-div">
+                    <button id="checkout-btn" class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h2>Contact us</h2>
+        <div id="contact-info">
+            <p>Whatsapp: 876-543-2109</p>
+            <p>Instagram: @partyrental</p>
+            <p>Email: party@rental.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
