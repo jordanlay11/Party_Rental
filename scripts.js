@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentSearch = '';
 
     function fetchItems() {
-        fetch('https://party-rental.great-site.net/items_api.php')
+        fetch('items_api.php')
             .then(response => response.json())
             .then(data => {
                 if (!data.success) {
@@ -200,5 +200,6 @@ function showSection(id, clicked) {
     if (clicked && clicked.classList) clicked.classList.add('active');
 
 }
+
 
 
